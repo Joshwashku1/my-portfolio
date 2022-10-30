@@ -5,34 +5,58 @@ body {
     justify-content: flex-start;
   }
 
-#title{
-    font-style: italic;
-    text-align: left;
+h2{
+    text-align: start;
 }
+
+
 
 header{
     display: flex;
     justify-content: flex-end;
-    text-align: center;
-    font-size: 15px;
+    font-size: 20px;
     padding: 30px;
     background-color: rgb(9, 9, 165);
     color: white;
+    flex-shrink: 1 0;
+}
+
+.title{
+    font-style: italic;
+    flex-direction: column;
 }
 
 nav {
     background-color: rgb(20, 180, 220);
-    color: azure;
+    text-decoration: azure;
+    text-align: end;
+}
+
+nav a:hover{
+    color: white;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 150px;
 }
 
 .experiences{
-    max-width: min-content;
+    
     padding-left: 30px;
     display: flex;
     align-content: flex-start;
     flex-direction: row;
     flex-wrap: wrap;
     background-color: antiquewhite;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+.experiences article{
+    flex: 1;
 }
 
 .card{

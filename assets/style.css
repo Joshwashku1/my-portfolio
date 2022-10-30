@@ -11,19 +11,24 @@ h2{
 
 
 
+#profilePic{
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 55%;
+}
+
 header{
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-evenly;
     font-size: 20px;
     padding: 30px;
     background-color: rgb(9, 9, 165);
     color: white;
-    flex-shrink: 1 0;
+    flex-shrink: 1;
 }
 
-.title{
+header .title{
     font-style: italic;
-    flex-direction: column;
 }
 
 nav {
@@ -36,18 +41,39 @@ nav a:hover{
     color: white;
 }
 
+aside {
+    display: flex;
+    flex: row;
+    width: 40%;
+    float: left;
+    font-style: italic;
+    color: black;
+}
+
 main{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 150px;
+    width: 70%;
+    /* Sets top and bottom margin to 20px. Auto will center element */
+    margin: 20px auto;
+}
+
+.aboutMe{
+    width: 50%;
+    /* Sets top and bottom margin to 20px. Auto will center element */
+    margin: 20px auto;
+    background-color: antiquewhite;
+    color: black;
 }
 
 .experiences{
     
-    padding-left: 30px;
+    width: 70%;
+    /* Sets top and bottom margin to 20px. Auto will center element */
+    margin: 20px auto;
     display: flex;
-    align-content: flex-start;
+    justify-content: space-evenly;
     flex-direction: row;
     flex-wrap: wrap;
     background-color: antiquewhite;
@@ -57,6 +83,10 @@ main{
 
 .experiences article{
     flex: 1;
+}
+
+#section_title::before{
+
 }
 
 .card{

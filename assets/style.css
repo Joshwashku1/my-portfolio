@@ -73,10 +73,10 @@ main{
     /* Sets top and bottom margin to 20px. Auto will center element */
     margin: 20px auto;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: antiquewhite;
+    
     row-gap: 20px;
     column-gap: 20px;
 }
@@ -85,12 +85,22 @@ main{
     flex: 1;
 }
 
-#section_title::before{
-
-}
-
 .card{
+    background-color: antiquewhite;
     border-style: double;
+}
+.card:hover{
+    border-color: blue;
 
 }
+
+.card .title{
+    text-align: center;
+}
+
+.card p{
+    text-align: left;
+}
+
+
 

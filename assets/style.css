@@ -76,6 +76,7 @@ main{
 
 /* 'About Me' section. */
 .aboutMe{
+    
     flex-basis: 50%;
     /* Sets top and bottom margin to 20px. Auto will center element */
     margin: 20px auto;
@@ -83,6 +84,8 @@ main{
     color: black;
     flex-grow: 1;
     padding: 20px;
+    border-style: dashed;
+    border-color: blue;
 }
 
 /* working experiences, interest contianer.
@@ -112,15 +115,16 @@ Aside from title 'Work'.***/
 /* Cards that hold information about work experience. */
 .container-card{
     /* flexes width */
-    flex-basis: 35%;
+    flex-basis: auto;
     background-color: antiquewhite;
     border-style: double;
+    cursor: pointer;
 }
 
 /* Used stack overflow code: https://stackoverflow.com/questions/41789278/first-child-full-width-in-flexbox 
     The first child of the parent container will be presented bigger. */
 .container-card:first-child{
-    flex-basis: 100%;
+    width: 100%;
 }
 
 .container-card:not(:first-child){
@@ -148,11 +152,17 @@ Aside from title 'Work'.***/
     padding: 20px;
 }
 
+
+
 /* The end of the page */
 footer{
     text-align: center;
     color: white;
     background-color: rgb(9, 9, 165);
+}
+
+@media screen {
+    
 }
 
 

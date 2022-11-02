@@ -71,6 +71,7 @@ main{
     width: 70%;
     /* Sets top and bottom margin to 20px. Auto will center element */
     margin: 20px auto;
+    flex: 1;
 }
 
 /* 'About Me' section. */
@@ -81,6 +82,7 @@ main{
     background-color: antiquewhite;
     color: black;
     flex-grow: 1;
+    padding: 20px;
 }
 
 /* working experiences, interest contianer.
@@ -97,14 +99,15 @@ Aside from title 'Work'.***/
     row-gap: 20px;
     column-gap: 20px; 
 
-    padding-top: 20px;
-}
-
-
-.experiences article{
-
+    padding: 20px;
     flex: 1;
+
+    
+
 }
+
+
+
 
 /* Cards that hold information about work experience. */
 .container-card{
@@ -113,18 +116,36 @@ Aside from title 'Work'.***/
     background-color: antiquewhite;
     border-style: double;
 }
+
+/* Used stack overflow code: https://stackoverflow.com/questions/41789278/first-child-full-width-in-flexbox 
+    The first child of the parent container will be presented bigger. */
+.container-card:first-child{
+    flex-basis: 100%;
+}
+
+.container-card:not(:first-child){
+    flex: 1;
+}
+
 .container-card:hover{
     border-color: blue;
 
 }
 
 .container-card .title{
+    padding-top: 15px;
     text-decoration: underline;
     text-align: center;
 }
 
 .container-card p{
+    text-align: center;
     padding: 20px 16px;
+}
+
+/* Contact style */
+.contact ul{
+    padding: 20px;
 }
 
 /* The end of the page */

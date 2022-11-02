@@ -12,6 +12,7 @@
 <body>
   <!-- Header -->
   <header>
+    <!-- Title name in header. -->
     <h1 class="title">Joshua Hamann's Portfolio</h1>
     <p>
       Hello, please feel free to take a look.
@@ -21,16 +22,18 @@
 
   <!-- Navbar -->
   <nav>
-    <a href="#">Danfoss</a>
-    <a href="#">Winemaker</a>
-    <a href="#">College</a>
-    <a href="#">Musician</a>
+    <a href="#danfoss">Danfoss</a>
+    <a href="#winemaker">Winemaker</a>
+    <a href="#college">College</a>
+    <a href="#musician">Musician</a>
   </nav>
 
   <!-- Body -->
   <main>
-    <aside><h2 id="section_title">About Me</h2></aside>
-    <section class="aboutMe">
+
+    <!-- About Me section above experience. -->
+    <aside><h2 class="section_title">About Me</h2></aside>
+    <div class="aboutMe">
          
         <p>I am originally from Tucson, AZ. I helped my father create a vineyard in rural Minnesota.
             I studied History and Computer Science at the University of Minnesota Morris. I currently work
@@ -38,29 +41,39 @@
             at the famous Whiskey A Go-Go in Los Angeles, California, where our band backed up 
             the group 'Sweet'!
         </p>
-    </section>
-    <!-- Experience Cards -->
-    <aside><h2 id="section_title">Work</h2></aside>
+    </div>
+    <!-- Experience section which is div by cards. -->
+    <aside><h2 class="section_title">Work</h2></aside>
     <div class="container-exp">
       <article class="container-card">
-        <h2 class="title">Danfoss</h2>
+        <h2 class="title" id="danfoss">Danfoss</h2>
         <pre>
         <p>Motor assembler at Danfoss.</p>
         </pre>
       </article>
       <article class="container-card">
-        <h2 class="title">Winemaker</h2>
+        <h2 class="title" id="winemaker">Winemaker</h2>
         <p>Regulated and maintained a 1400 plant vineyard.</p>
       </article>
       <article class="container-card">
-        <h2 class="title">College</h2>
+        <h2 class="title" id="college">College</h2>
         <p>Went to the University of Minnesota Morris. Majored in History Minor Computer Science.</p>
       </article>
       <article class="container-card">
-        <h2 class="title">Musician</h2>
+        <h2 class="title" id="musician">Musician</h2>
         <p>Music is one of my many passions.</p>
       </article>
     </div>
+
+    <!-- Contact section. -->
+    <aside><h2 class="section_title">Contact</h2></aside>
+    <div class="contact">
+        <ul>
+            <li>Email: 'hamanncaleb127@gmail.com'</li>
+            <li>Phone: (520)405-9124</li>
+        </ul>
+    </div>
+
   </main>
 
   <!-- Footer -->

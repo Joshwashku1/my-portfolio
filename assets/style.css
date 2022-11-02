@@ -17,6 +17,7 @@ h2{
     border-radius: 55%;
 }
 
+/* Beginning of page */
 header{
     display: flex;
     justify-content: space-evenly;
@@ -27,21 +28,33 @@ header{
     flex-shrink: 1;
 }
 
+/* Title name written in the header. */
 header .title{
     font-style: italic;
 }
 
+/* Bar that displays links around the page. */
 nav {
     background-color: rgb(20, 180, 220);
     text-decoration: azure;
     text-align: end;
 }
 
-nav a:hover{
+/* Displaying elements in the nav bar. */
+nav a{
+
+    font-weight: bold;
     color: white;
 }
 
+/* Hover over elements in the nave bar. */
+nav a:hover{
+    color: purple;
+}
+
+/* Aside from main. */
 aside {
+    text-decoration: underline;
     display: flex;
     flex: row;
     width: 40%;
@@ -50,6 +63,7 @@ aside {
     color: black;
 }
 
+/* Main body of the webpage */
 main{
     display: flex;
     flex-direction: column;
@@ -59,47 +73,65 @@ main{
     margin: 20px auto;
 }
 
+/* 'About Me' section. */
 .aboutMe{
-    width: 50%;
+    flex-basis: 50%;
     /* Sets top and bottom margin to 20px. Auto will center element */
     margin: 20px auto;
     background-color: antiquewhite;
     color: black;
+    flex-grow: 1;
 }
 
-.experiences{
+/* working experiences, interest contianer.
+Aside from title 'Work'.***/
+.container-exp{
     
-    width: 70%;
+    /* width: 70%;
     /* Sets top and bottom margin to 20px. Auto will center element */
-    margin: 20px auto;
+    /* margin: 20px auto; */ 
     display: flex;
-    justify-content: space-around;
     flex-direction: row;
     flex-wrap: wrap;
     
     row-gap: 20px;
-    column-gap: 20px;
+    column-gap: 20px; 
+
+    padding-top: 20px;
 }
 
+
 .experiences article{
+
     flex: 1;
 }
 
-.card{
+/* Cards that hold information about work experience. */
+.container-card{
+    /* flexes width */
+    flex-basis: 35%;
     background-color: antiquewhite;
     border-style: double;
 }
-.card:hover{
+.container-card:hover{
     border-color: blue;
 
 }
 
-.card .title{
+.container-card .title{
+    text-decoration: underline;
     text-align: center;
 }
 
-.card p{
-    text-align: left;
+.container-card p{
+    padding: 20px 16px;
+}
+
+/* The end of the page */
+footer{
+    text-align: center;
+    color: white;
+    background-color: rgb(9, 9, 165);
 }
 
 

@@ -176,7 +176,7 @@ footer{
     background-color: rgb(9, 9, 165);
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 568px){
 
     .aboutMe {
         max-width: none;

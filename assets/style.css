@@ -20,17 +20,31 @@ h2{
 /* Beginning of page */
 header{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     font-size: 20px;
     padding: 30px;
     background-color: rgb(9, 9, 165);
     color: white;
-    flex-shrink: 1;
+    flex: 1;
 }
 
 /* Title name written in the header. */
 header .title{
     font-style: italic;
+    justify-content: flex-start;
+    padding-top: 25px;
+}
+
+header p{
+    max-width: 35%;
+    padding: 25px;
+    justify-content: center;
+    text-align: center;
+}
+
+header #profilePic{
+    justify-content: flex-end;
+    max-width: 50%;
 }
 
 /* Bar that displays links around the page. */
@@ -86,6 +100,7 @@ main{
     padding: 20px;
     border-style: dashed;
     border-color: blue;
+    max-width: 50%;
 }
 
 /* working experiences, interest contianer.
@@ -161,8 +176,47 @@ footer{
     background-color: rgb(9, 9, 165);
 }
 
-@media screen {
+@media screen and (max-width: 768px){
+
+    .aboutMe {
+        max-width: none;
+    }
+
+    header{
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    header p{
+        min-width: 55%;
+        
+    }
+
+    header #profilePic{
+        max-width: 30%;
+    }
+
+
+    .container-exp {
+        display: flex;
+        flex-direction: column;
+        max-width: 75%;
+    }
+
     
+
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+   
+    .container-card:first-child{
+        flex-basis: 100%;
+    }
+    
+    .container-card:not(:first-child){
+        flex: 1;
+    }
 }
 
 

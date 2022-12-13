@@ -47,6 +47,12 @@ header #profilePic{
     max-width: 50%;
 }
 
+.elements{
+    max-width: 35%;
+    padding: 25px;
+    justify-content: center;
+    text-align: center;
+}
 /* Bar that displays links around the page. */
 nav {
     background-color: rgb(20, 180, 220);
@@ -157,10 +163,11 @@ Aside from title 'Work'.***/
     text-align: center;
 }
 
-.container-card p{
+.container-card p,a{
     text-align: center;
     padding: 20px 16px;
 }
+
 
 /* Contact style */
 .contact ul{
